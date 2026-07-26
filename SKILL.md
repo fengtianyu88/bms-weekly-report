@@ -19,7 +19,7 @@ This skill generates a comprehensive weekly BMS (Battery Management System) tech
 The report contains 6 sections in this exact order:
 
 1. **本周趋势展望** (3-5 items, at the top, no source links, each 1-2 sentences)
-2. **一、学术论文进展** (10 items)
+2. **一、学术论文进展** (10 items: 6 high-IF journal papers + 4 arXiv papers)
 3. **二、厂商动态** (10 items)
 4. **三、开源项目与数据集** (10 items)
 5. **四、专利技术** (10 items)
@@ -40,7 +40,7 @@ Total: 53-55 entries, each with a valid source link dated within the past 7 days
 
 | Section | T1 | T2 | T3 | T4 |
 |---------|----|----|----|----|
-| Papers | Nature/Science | SCI journals, arXiv top-level | Domestic core journals | — |
+| Papers | Nature/Science (IF>30) | SCI journals (IF>5), arXiv top-level | Domestic core journals (IF<5) | — |
 | Vendor | Government policy | Authoritative media | Enterprise official | Industry news/self-media |
 | Open Source | — | — | GitHub projects | — |
 | Patents | — | — | Enterprise patents | — |
@@ -50,11 +50,44 @@ Total: 53-55 entries, each with a valid source link dated within the past 7 days
 
 ## Content Source Requirements
 
-- **Papers**: Prioritize SCI journals (Applied Energy, J. Power Sources, Nature Energy). Use arXiv as fallback. Each paper's tag row must include the journal source name (e.g., "arXiv", "Applied Energy").
+- **Papers (CRITICAL - 6+4 composition rule)**: The 10 papers MUST consist of exactly **6 high-impact-factor journal papers** + **4 arXiv preprints**.
+  - **6 journal papers**: Selected from high-IF SCI journals (see "Recommended High-IF Journals" table below). T1 for Nature/Science-tier (IF>30), T2 for other SCI journals (IF>5). Each must include journal name in tag row and a valid DOI link (`https://doi.org/...`). Verify DOI via Crossref API before use.
+  - **4 arXiv papers**: Selected from arXiv preprints within the past 7 days. All T2 tier. Each must include "arXiv" in tag row and a valid arXiv link (`https://arxiv.org/abs/XXXX.XXXXX`).
+  - Each paper's tag row must include the journal source name (e.g., "Applied Energy", "arXiv").
 - **Vendor news**: Use reliable sources only (新浪财经, 东方财富, 搜狐, 人民网, OFweek). **NEVER use toutiao.com links**.
 - **Open source**: GitHub Releases from the past 7 days.
 - **Patents**: Google Patents, prefer CN patents, published within 7 days.
 - **Standards**: National standards system, MIIT, NEA official sites.
+
+## Recommended High-IF Journals for Papers
+
+When selecting the 6 journal papers, prioritize journals from this list (2024 JCR Impact Factor data):
+
+### T1 Tier (IF > 30, Top-tier)
+
+| Journal | IF (2024) | Publisher | BMS Relevance |
+|---------|-----------|-----------|---------------|
+| Nature Energy | 60.1 | Springer Nature | Medium |
+| Electrochemical Energy Reviews | 36.3 | Springer | Medium-High |
+| Joule | 35.4 | Cell Press / Elsevier | Medium |
+| Energy & Environmental Science | 30.8 | Royal Society of Chemistry | Medium-High |
+
+### T2 Tier (IF 5-30, SCI Journals)
+
+| Journal | IF (2024) | Publisher | BMS Relevance |
+|---------|-----------|-----------|---------------|
+| Energy Storage Materials | ~18.9 | Elsevier | Medium-High |
+| ACS Energy Letters | ~19.3 | ACS | Medium |
+| Applied Energy | ~11.0 | Elsevier | **High** |
+| Energy Conversion and Management | ~9.9 | Elsevier | Medium-High |
+| Battery Energy | ~9.0 | Wiley | **High** |
+| Journal of Energy Storage | ~8.9 | Elsevier | **High** |
+| Journal of Power Sources | ~8.0 | Elsevier | **High** |
+| IEEE Trans. on Industrial Electronics | ~7.5 | IEEE | **High** |
+| IEEE Trans. on Power Electronics | ~6.5 | IEEE | **High** |
+| Electrochimica Acta | ~5.5 | Elsevier | Medium |
+
+**Selection priority**: Prefer journals marked "High" BMS relevance when available. If no suitable High-relevance paper is found in a given week, expand to Medium-High or Medium relevance journals.
 
 ## HTML Format Specification
 
@@ -152,7 +185,7 @@ result = json.loads(r.content.decode('utf-8'))
 
 ### Post-Push Verification
 1. Read back draft via `POST /cgi-bin/draft/get`
-2. Verify: title contains date, Chinese chars > 5000, H2 count = 6, URL count > 50, journal badge count = 10
+2. Verify: title contains date, Chinese chars > 5000, H2 count = 6, URL count > 50, journal badge count = 10, DOI count >= 6, arXiv count = 4
 
 ## Common Pitfalls and Solutions
 
@@ -171,6 +204,7 @@ result = json.loads(r.content.decode('utf-8'))
 13. **GitHub releases links**: Some repos have no tagged releases. Use the repo main URL (`github.com/user/repo`) instead of `/releases` when no releases exist. Verify via GitHub API: `api.github.com/repos/{owner}/{repo}`.
 14. **Google Patents timeouts**: `patents.google.com` may timeout in HEAD requests. Verify patent numbers via CNIPA (`epub.cnipa.gov.cn`) or financial media sources instead. The Google Patents URL format `patents.google.com/patent/{PUBLICATION_NUMBER}` is reliable when the patent number is correct.
 15. **CIAPS standard URLs**: `ciaps.org.cn/news/standard` does not exist. Use `escn.com.cn` or CIAPS announcement pages with specific item IDs (e.g., `ciaps.org.cn/news/show-htm-itemid-XXXXX.html`).
+16. **Paper composition rule (CRITICAL)**: The 10 papers MUST be exactly 6 high-IF journal papers + 4 arXiv papers. Do NOT use 10 arXiv papers or 10 journal papers. Journal papers must have DOI links verified via Crossref; arXiv papers must have valid arXiv IDs. If fewer than 6 suitable journal papers are found in a given week, expand the search to adjacent fields (battery materials, electrochemistry, power electronics) rather than filling with more arXiv papers.
 
 ## Complete Color Reference
 
@@ -197,7 +231,8 @@ After generating content, verify:
 
 - [ ] 6 H2 sections in correct order (trends first, standards last)
 - [ ] Trends: 3-5 items, no links, no intro paragraph, each 1-2 sentences
-- [ ] Papers: 10 items, all have journal name in tag row, tiers consistent (T1 top-tier, T2 SCI/arXiv, T3 domestic core)
+- [ ] Papers: 10 items (6 high-IF journal + 4 arXiv), all have journal name in tag row, tiers consistent (T1 top-tier IF>30, T2 SCI IF>5 / arXiv, T3 domestic core IF<5)
+- [ ] Papers: exactly 6 journal papers with DOI links + 4 arXiv papers with arXiv links
 - [ ] Vendor news: 10 items, no toutiao.com links, border `#27ae60`
 - [ ] Open source: 10 items, all GitHub links, border `#4a90d9`
 - [ ] Patents: 10 items, each has 申请人/摘要/创新 (50-100 chars), border `#e67e22`
