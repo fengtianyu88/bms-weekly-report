@@ -33,6 +33,10 @@ Invoke when user asks to generate/publish/update the BMS weekly report or says "
 
 ## Latest Updates
 
+**2026-08-18**
+- Cover finalized: PIL-rendered hierarchical layout (title 160pt / date 111pt, ~1.8:1) replacing all equal-height attempts; AI generation banned for covers
+- SPEC.zh-CN.md cover section rewritten to match; 2026-08-17 Admiralty implementation scripts added as examples
+
 **2026-08-17**
 - Adopted Admiralty/NATO AJP-2.1 dual-character source rating (A–F × 1–6), replacing legacy T1-T4 tiers
 - Full rating audit: 吉利 entry re-sourced to 财联社/新浪财经 editorial (B2), CATL patent link switched to Google Patents first-hand, 海辰 patent relay downgraded to C3
