@@ -8,8 +8,10 @@ A skill for generating weekly BMS (Battery Management System) technology trackin
 - 6+4 paper composition: 6 high-IF journal papers + 4 arXiv preprints
 - Source rating per **Admiralty / NATO AJP-2.1**: dual-character rating (Source Reliability A–F × Information Credibility 1–6, e.g. `B2`) with color-coded badges
 - WeChat Official Account draft box integration
+- Idempotent draft push (`draft/update`, no duplicate drafts)
 - Post-push verification with read-back checking
-- Cover image generation with AI
+- Cross-issue deduplication against the previous three issues
+- Cover image generation with PIL (deterministic, no AI)
 
 ## Report Structure
 
@@ -32,6 +34,13 @@ Invoke when user asks to generate/publish/update the BMS weekly report or says "
 - `docs/SPEC.zh-CN.md` — full Chinese requirements spec & implementation guide (v2.0, migrated from the former `bms-weekly-report-skill` repo)
 
 ## Latest Updates
+
+**2026-10-22**
+- **Alignment fix (CRITICAL)**: WeChat justifies divs by default, stretching long English paper titles (`9 · System Identification…`) into a huge gap after `9 ·`. All entry sections and text divs now carry `text-align:left`, with a read-back check.
+- **Cross-issue deduplication**: new mandatory step comparing the draft with the previous 3 issues (identity keys: DOI / arXiv ID / GitHub release tag / standard `hcno`). Rules: 0 exact duplicates; ≤1 release per GitHub repo per issue; no standard number repeated within 4 issues. Fixed 3 repeated standards (GB/T 48072, GB/T 47136, GB 48146) and 4 Predbat entries in one issue.
+- **Idempotent push**: `draft_id.txt` + `draft/update` so revisions never create duplicate drafts.
+- **Data collection recipes**: verified endpoints for Crossref, arXiv API, Sina search API, openstd, GitHub releases search.
+- New pitfalls 27–31 (justify gaps, repeated standards, transient GitHub timeouts, qixin 403, single-repo over-representation).
 
 **2026-08-18**
 - Cover finalized: PIL-rendered hierarchical layout (title 160pt / date 111pt, ~1.8:1) replacing all equal-height attempts; AI generation banned for covers
