@@ -116,9 +116,9 @@
 ### 3.3 趋势展望条目模板
 
 ```html
-<section style="margin-bottom:12px;padding:12px 14px;background:#fff;border-left:3px solid #4a90d9;border-radius:4px;word-break:break-all;">
-  <div style="font-size:14px;color:#111;font-weight:bold;margin-bottom:6px;line-height:1.5;">1 · 趋势标题</div>
-  <div style="font-size:13px;color:#333;margin-bottom:6px;line-height:1.7;">一两句话描述，不超过两行。</div>
+<section style="margin-bottom:12px;padding:12px 14px;background:#fff;border-left:3px solid #4a90d9;border-radius:4px;word-break:break-all;text-align:left;">
+  <div style="font-size:14px;color:#111;font-weight:bold;margin-bottom:6px;line-height:1.5;text-align:left;">1 · 趋势标题</div>
+  <div style="font-size:13px;color:#333;margin-bottom:6px;line-height:1.7;text-align:left;">一两句话描述，不超过两行。</div>
 </section>
 ```
 
@@ -131,13 +131,13 @@
 ### 3.4 论文条目模板（arXiv / C3）
 
 ```html
-<section style="margin-bottom:12px;padding:12px 14px;background:#fff;border-left:3px solid #4a90d9;border-radius:4px;word-break:break-all;"><div style="display:flex;align-items:center;flex-wrap:nowrap;gap:4px;margin-bottom:6px;overflow-x:auto;white-space:nowrap;"><span style="background:#e67e22;color:#fff;font-size:11px;padding:1px 6px;border-radius:3px;">C3</span><span style="background:#e8f5e9;color:#2e7d32;font-size:11px;padding:1px 6px;border-radius:3px;">📅2026-08-12</span><span style="background:#d4edda;color:#155724;font-size:11px;padding:1px 6px;border-radius:3px;">arXiv</span><span style="background:#d4edda;color:#155724;font-size:11px;padding:1px 6px;border-radius:3px;">主题标签</span></div><div style="font-size:14px;color:#111;font-weight:bold;margin-bottom:6px;line-height:1.5;">1 · 论文标题</div><div style="font-size:13px;color:#333;margin-bottom:6px;line-height:1.7;">📌 <b>摘要:</b>50~100字摘要内容</div><div style="font-size:13px;color:#333;margin-bottom:6px;line-height:1.7;">💡 <b>创新:</b>50~100字创新点描述</div><div style="color:#888;font-size:12px;">来源: <span style="color:#4a90d9;text-decoration:none;;word-break:break-all">https://arxiv.org/abs/XXXX.XXXXX</span></div></section>
+<section style="margin-bottom:12px;padding:12px 14px;background:#fff;border-left:3px solid #4a90d9;border-radius:4px;word-break:break-all;text-align:left;"><div style="display:flex;align-items:center;flex-wrap:nowrap;gap:4px;margin-bottom:6px;overflow-x:auto;white-space:nowrap;"><span style="background:#e67e22;color:#fff;font-size:11px;padding:1px 6px;border-radius:3px;">C3</span><span style="background:#e8f5e9;color:#2e7d32;font-size:11px;padding:1px 6px;border-radius:3px;">📅2026-08-12</span><span style="background:#d4edda;color:#155724;font-size:11px;padding:1px 6px;border-radius:3px;">arXiv</span><span style="background:#d4edda;color:#155724;font-size:11px;padding:1px 6px;border-radius:3px;">主题标签</span></div><div style="font-size:14px;color:#111;font-weight:bold;margin-bottom:6px;line-height:1.5;text-align:left;">1 · 论文标题</div><div style="font-size:13px;color:#333;margin-bottom:6px;line-height:1.7;text-align:left;">📌 <b>摘要:</b>50~100字摘要内容</div><div style="font-size:13px;color:#333;margin-bottom:6px;line-height:1.7;text-align:left;">💡 <b>创新:</b>50~100字创新点描述</div><div style="color:#888;font-size:12px;text-align:left;">来源: <span style="color:#4a90d9;text-decoration:none;;word-break:break-all">https://arxiv.org/abs/XXXX.XXXXX</span></div></section>
 ```
 
 ### 3.5 论文条目模板（SCI 期刊 / A2 或 B2）
 
 ```html
-<section style="margin-bottom:12px;padding:12px 14px;background:#fff;border-left:3px solid #4a90d9;border-radius:4px;word-break:break-all;"><div style="display:flex;align-items:center;flex-wrap:nowrap;gap:4px;margin-bottom:6px;overflow-x:auto;white-space:nowrap;"><span style="background:#4a90d9;color:#fff;font-size:11px;padding:1px 6px;border-radius:3px;">B2</span><span style="background:#e8f5e9;color:#2e7d32;font-size:11px;padding:1px 6px;border-radius:3px;">📅2026-08-17</span><span style="background:#d4edda;color:#155724;font-size:11px;padding:1px 6px;border-radius:3px;">Applied Energy</span><span style="background:#d4edda;color:#155724;font-size:11px;padding:1px 6px;border-radius:3px;">主题标签</span></div><div style="font-size:14px;color:#111;font-weight:bold;margin-bottom:6px;line-height:1.5;">9 · 论文标题</div><div style="font-size:13px;color:#333;margin-bottom:6px;line-height:1.7;">📌 <b>摘要:</b>50~100字摘要内容</div><div style="font-size:13px;color:#333;margin-bottom:6px;line-height:1.7;">💡 <b>创新:</b>50~100字创新点描述</div><div style="color:#888;font-size:12px;">来源: <span style="color:#4a90d9;text-decoration:none;;word-break:break-all">https://doi.org/10.1016/...</span></div></section>
+<section style="margin-bottom:12px;padding:12px 14px;background:#fff;border-left:3px solid #4a90d9;border-radius:4px;word-break:break-all;text-align:left;"><div style="display:flex;align-items:center;flex-wrap:nowrap;gap:4px;margin-bottom:6px;overflow-x:auto;white-space:nowrap;"><span style="background:#4a90d9;color:#fff;font-size:11px;padding:1px 6px;border-radius:3px;">B2</span><span style="background:#e8f5e9;color:#2e7d32;font-size:11px;padding:1px 6px;border-radius:3px;">📅2026-08-17</span><span style="background:#d4edda;color:#155724;font-size:11px;padding:1px 6px;border-radius:3px;">Applied Energy</span><span style="background:#d4edda;color:#155724;font-size:11px;padding:1px 6px;border-radius:3px;">主题标签</span></div><div style="font-size:14px;color:#111;font-weight:bold;margin-bottom:6px;line-height:1.5;text-align:left;">9 · 论文标题</div><div style="font-size:13px;color:#333;margin-bottom:6px;line-height:1.7;text-align:left;">📌 <b>摘要:</b>50~100字摘要内容</div><div style="font-size:13px;color:#333;margin-bottom:6px;line-height:1.7;text-align:left;">💡 <b>创新:</b>50~100字创新点描述</div><div style="color:#888;font-size:12px;text-align:left;">来源: <span style="color:#4a90d9;text-decoration:none;;word-break:break-all">https://doi.org/10.1016/...</span></div></section>
 ```
 
 顶刊（Nature/Science 系）将评级徽章换为 `A2`（`background:#6abf69`）。
@@ -145,7 +145,7 @@
 ### 3.6 厂商动态条目模板
 
 ```html
-<section style="margin-bottom:12px;padding:12px 14px;background:#fff;border-left:3px solid #27ae60;border-radius:4px;word-break:break-all;"><div style="display:flex;align-items:center;flex-wrap:nowrap;gap:4px;margin-bottom:6px;overflow-x:auto;white-space:nowrap;"><span style="background:#4a90d9;color:#fff;font-size:11px;padding:1px 6px;border-radius:3px;">B2</span><span style="background:#e8f5e9;color:#2e7d32;font-size:11px;padding:1px 6px;border-radius:3px;">📅2026-08-17</span><span style="background:#d4edda;color:#155724;font-size:11px;padding:1px 6px;border-radius:3px;">标签1</span><span style="background:#d4edda;color:#155724;font-size:11px;padding:1px 6px;border-radius:3px;">标签2</span></div><div style="font-size:14px;color:#111;font-weight:bold;margin-bottom:6px;line-height:1.5;">1 · 标题</div><div style="font-size:13px;color:#333;margin-bottom:6px;line-height:1.7;">📌 <b>摘要:</b>50~100字摘要内容</div><div style="color:#888;font-size:12px;">来源: <span style="color:#4a90d9;text-decoration:none;;word-break:break-all">https://...</span></div></section>
+<section style="margin-bottom:12px;padding:12px 14px;background:#fff;border-left:3px solid #27ae60;border-radius:4px;word-break:break-all;text-align:left;"><div style="display:flex;align-items:center;flex-wrap:nowrap;gap:4px;margin-bottom:6px;overflow-x:auto;white-space:nowrap;"><span style="background:#4a90d9;color:#fff;font-size:11px;padding:1px 6px;border-radius:3px;">B2</span><span style="background:#e8f5e9;color:#2e7d32;font-size:11px;padding:1px 6px;border-radius:3px;">📅2026-08-17</span><span style="background:#d4edda;color:#155724;font-size:11px;padding:1px 6px;border-radius:3px;">标签1</span><span style="background:#d4edda;color:#155724;font-size:11px;padding:1px 6px;border-radius:3px;">标签2</span></div><div style="font-size:14px;color:#111;font-weight:bold;margin-bottom:6px;line-height:1.5;text-align:left;">1 · 标题</div><div style="font-size:13px;color:#333;margin-bottom:6px;line-height:1.7;text-align:left;">📌 <b>摘要:</b>50~100字摘要内容</div><div style="color:#888;font-size:12px;text-align:left;">来源: <span style="color:#4a90d9;text-decoration:none;;word-break:break-all">https://...</span></div></section>
 ```
 
 **注意**：厂商动态部分左边框颜色为 `#27ae60`（绿色），与论文的 `#4a90d9`（蓝色）区分。评级徽章按来源实况：权威媒体 B2（蓝）、企业官方/行业资讯 C2（橙）、企查查统计 C3（橙）、自媒体 D3（紫）。
@@ -153,13 +153,13 @@
 ### 3.7 开源项目条目模板
 
 ```html
-<section style="margin-bottom:12px;padding:12px 14px;background:#fff;border-left:3px solid #4a90d9;border-radius:4px;word-break:break-all;"><div style="display:flex;align-items:center;flex-wrap:nowrap;gap:4px;margin-bottom:6px;overflow-x:auto;white-space:nowrap;"><span style="background:#e67e22;color:#fff;font-size:11px;padding:1px 6px;border-radius:3px;">C2</span><span style="background:#e8f5e9;color:#2e7d32;font-size:11px;padding:1px 6px;border-radius:3px;">📅2026-08-10</span><span style="background:#d4edda;color:#155724;font-size:11px;padding:1px 6px;border-radius:3px;">标签1</span><span style="background:#d4edda;color:#155724;font-size:11px;padding:1px 6px;border-radius:3px;">标签2</span></div><div style="font-size:14px;color:#111;font-weight:bold;margin-bottom:6px;line-height:1.5;">1 · 项目名称</div><div style="font-size:13px;color:#333;margin-bottom:6px;line-height:1.7;">📌 <b>摘要:</b>50~100字摘要内容</div><div style="color:#888;font-size:12px;">来源: <span style="color:#4a90d9;text-decoration:none;;word-break:break-all">https://github.com/...</span></div></section>
+<section style="margin-bottom:12px;padding:12px 14px;background:#fff;border-left:3px solid #4a90d9;border-radius:4px;word-break:break-all;text-align:left;"><div style="display:flex;align-items:center;flex-wrap:nowrap;gap:4px;margin-bottom:6px;overflow-x:auto;white-space:nowrap;"><span style="background:#e67e22;color:#fff;font-size:11px;padding:1px 6px;border-radius:3px;">C2</span><span style="background:#e8f5e9;color:#2e7d32;font-size:11px;padding:1px 6px;border-radius:3px;">📅2026-08-10</span><span style="background:#d4edda;color:#155724;font-size:11px;padding:1px 6px;border-radius:3px;">标签1</span><span style="background:#d4edda;color:#155724;font-size:11px;padding:1px 6px;border-radius:3px;">标签2</span></div><div style="font-size:14px;color:#111;font-weight:bold;margin-bottom:6px;line-height:1.5;text-align:left;">1 · 项目名称</div><div style="font-size:13px;color:#333;margin-bottom:6px;line-height:1.7;text-align:left;">📌 <b>摘要:</b>50~100字摘要内容</div><div style="color:#888;font-size:12px;text-align:left;">来源: <span style="color:#4a90d9;text-decoration:none;;word-break:break-all">https://github.com/...</span></div></section>
 ```
 
 ### 3.8 专利条目模板
 
 ```html
-<section style="margin-bottom:12px;padding:12px 14px;background:#fff;border-left:3px solid #e67e22;border-radius:4px;word-break:break-all;"><div style="display:flex;align-items:center;flex-wrap:nowrap;gap:4px;margin-bottom:6px;overflow-x:auto;white-space:nowrap;"><span style="background:#e67e22;color:#fff;font-size:11px;padding:1px 6px;border-radius:3px;">C2</span><span style="background:#e8f5e9;color:#2e7d32;font-size:11px;padding:1px 6px;border-radius:3px;">📅2026-08-16</span><span style="background:#d4edda;color:#155724;font-size:11px;padding:1px 6px;border-radius:3px;">申请人</span><span style="background:#d4edda;color:#155724;font-size:11px;padding:1px 6px;border-radius:3px;">技术标签</span></div><div style="font-size:14px;color:#111;font-weight:bold;margin-bottom:6px;line-height:1.5;">1 · CN123456789A 专利标题</div><div style="font-size:13px;color:#333;margin-bottom:6px;line-height:1.7;">📌 <b>申请人:</b>公司名称</div><div style="font-size:13px;color:#333;margin-bottom:6px;line-height:1.7;">📌 <b>摘要:</b>50~100字摘要内容</div><div style="font-size:13px;color:#333;margin-bottom:6px;line-height:1.7;">💡 <b>创新:</b>50~100字创新点描述</div><div style="color:#888;font-size:12px;">来源: <span style="color:#4a90d9;text-decoration:none;;word-break:break-all">https://patents.google.com/patent/CN123456789A/zh</span></div></section>
+<section style="margin-bottom:12px;padding:12px 14px;background:#fff;border-left:3px solid #e67e22;border-radius:4px;word-break:break-all;text-align:left;"><div style="display:flex;align-items:center;flex-wrap:nowrap;gap:4px;margin-bottom:6px;overflow-x:auto;white-space:nowrap;"><span style="background:#e67e22;color:#fff;font-size:11px;padding:1px 6px;border-radius:3px;">C2</span><span style="background:#e8f5e9;color:#2e7d32;font-size:11px;padding:1px 6px;border-radius:3px;">📅2026-08-16</span><span style="background:#d4edda;color:#155724;font-size:11px;padding:1px 6px;border-radius:3px;">申请人</span><span style="background:#d4edda;color:#155724;font-size:11px;padding:1px 6px;border-radius:3px;">技术标签</span></div><div style="font-size:14px;color:#111;font-weight:bold;margin-bottom:6px;line-height:1.5;text-align:left;">1 · CN123456789A 专利标题</div><div style="font-size:13px;color:#333;margin-bottom:6px;line-height:1.7;text-align:left;">📌 <b>申请人:</b>公司名称</div><div style="font-size:13px;color:#333;margin-bottom:6px;line-height:1.7;text-align:left;">📌 <b>摘要:</b>50~100字摘要内容</div><div style="font-size:13px;color:#333;margin-bottom:6px;line-height:1.7;text-align:left;">💡 <b>创新:</b>50~100字创新点描述</div><div style="color:#888;font-size:12px;text-align:left;">来源: <span style="color:#4a90d9;text-decoration:none;;word-break:break-all">https://patents.google.com/patent/CN123456789A/zh</span></div></section>
 ```
 
 **注意**：专利部分左边框颜色为 `#e67e22`（橙色），包含申请人、摘要、创新三个字段。评级：Google Patents 一手文本 C2，聚合平台转述 C3。
@@ -167,7 +167,7 @@
 ### 3.9 标准条目模板
 
 ```html
-<section style="margin-bottom:12px;padding:12px 14px;background:#fff;border-left:3px solid #e67e22;border-radius:4px;word-break:break-all;"><div style="display:flex;align-items:center;flex-wrap:nowrap;gap:4px;margin-bottom:6px;overflow-x:auto;white-space:nowrap;"><span style="background:#6abf69;color:#fff;font-size:11px;padding:1px 6px;border-radius:3px;">A2</span><span style="background:#e8f5e9;color:#2e7d32;font-size:11px;padding:1px 6px;border-radius:3px;">📅2026-08-11</span><span style="background:#d4edda;color:#155724;font-size:11px;padding:1px 6px;border-radius:3px;">强制性国标</span><span style="background:#d4edda;color:#155724;font-size:11px;padding:1px 6px;border-radius:3px;">技术标签</span></div><div style="font-size:14px;color:#111;font-weight:bold;margin-bottom:6px;line-height:1.5;">1 · GB 38031-2025《标准名称》</div><div style="font-size:13px;color:#333;margin-bottom:6px;line-height:1.7;">🎯 <b>目的:</b>50~100字目的描述</div><div style="font-size:13px;color:#333;margin-bottom:6px;line-height:1.7;">📋 <b>核心内容:</b>50~100字核心内容描述</div><div style="font-size:13px;color:#333;margin-bottom:6px;line-height:1.7;">📅 <b>实施:</b>实施日期，发布机构</div><div style="color:#888;font-size:12px;">来源: <span style="color:#4a90d9;text-decoration:none;;word-break:break-all">https://...</span></div></section>
+<section style="margin-bottom:12px;padding:12px 14px;background:#fff;border-left:3px solid #e67e22;border-radius:4px;word-break:break-all;text-align:left;"><div style="display:flex;align-items:center;flex-wrap:nowrap;gap:4px;margin-bottom:6px;overflow-x:auto;white-space:nowrap;"><span style="background:#6abf69;color:#fff;font-size:11px;padding:1px 6px;border-radius:3px;">A2</span><span style="background:#e8f5e9;color:#2e7d32;font-size:11px;padding:1px 6px;border-radius:3px;">📅2026-08-11</span><span style="background:#d4edda;color:#155724;font-size:11px;padding:1px 6px;border-radius:3px;">强制性国标</span><span style="background:#d4edda;color:#155724;font-size:11px;padding:1px 6px;border-radius:3px;">技术标签</span></div><div style="font-size:14px;color:#111;font-weight:bold;margin-bottom:6px;line-height:1.5;text-align:left;">1 · GB 38031-2025《标准名称》</div><div style="font-size:13px;color:#333;margin-bottom:6px;line-height:1.7;text-align:left;">🎯 <b>目的:</b>50~100字目的描述</div><div style="font-size:13px;color:#333;margin-bottom:6px;line-height:1.7;text-align:left;">📋 <b>核心内容:</b>50~100字核心内容描述</div><div style="font-size:13px;color:#333;margin-bottom:6px;line-height:1.7;text-align:left;">📅 <b>实施:</b>实施日期，发布机构</div><div style="color:#888;font-size:12px;text-align:left;">来源: <span style="color:#4a90d9;text-decoration:none;;word-break:break-all">https://...</span></div></section>
 ```
 
 **注意**：评级按发布方实况：官方平台正式文本 A2（绿），中电联 GB/DL 征求意见 B2（蓝），T/CEC 团体标准 C2（橙）。
@@ -188,6 +188,14 @@
 | 开源项目 | `#4a90d9` | 蓝色 |
 | 专利技术 | `#e67e22` | 橙色 |
 | 行业标准 | `#e67e22` | 橙色 |
+
+### 3.12 文本对齐要求（2026-10-22 新增，关键）
+
+所有条目 `<section>` 以及其中的标题、摘要、创新、申请人、目的、核心内容、实施、来源行 `<div>`，都必须显式写 `text-align:left;`。
+
+原因：微信默认按两端对齐（justify）渲染 div。纯中文段落看不出问题；长英文论文标题（如 `9 · System Identification for Nonlinear Stochastic State-Space Models …`）首行会被拉满，空格被平均放大，出现「9」与「System」之间的巨大空隙。用户会直接指出这个视觉缺陷。
+
+模板已全部带上该属性；推送后回读草稿，确认标题 div 中的 `text-align:left` 仍然存在。
 
 ---
 
@@ -220,14 +228,39 @@
 
 ## 六、格式一致性检查清单
 
+### 6.1 跨期去重（2026-10-22 新增，强制）
+
+推送前必须与**前 3 期**（`bms_weekly_*/bms_weekly_YYYY-MM-DD.html`、`bms-weekly-*/…`）比对：
+
+| 部分 | 身份键 |
+|------|--------|
+| 论文 | DOI 或 arXiv ID（去掉版本后缀） |
+| 厂商 | 文章 URL |
+| 开源 | GitHub release tag URL（仓库主页不算身份） |
+| 专利 | 专利号或来源文章 URL |
+| 标准 | `hcno` 或标准号（如 GB/T 48072-2026） |
+
+分类规则：
+- **完全重复**：身份键相同 → 必须替换，五部分均要求 0 条
+- **同项目新版本**：同一仓库、不同 release tag → 允许，但**每期每个仓库最多 1 条**（大版本升级最多 2 条）
+- **标题高相似**：归一化后 `difflib.SequenceMatcher ≥ 0.80` → 人工复核
+
+要求：
+1. 标准号在连续 4 期内不得重复（2026-10-22 期曾重复 10-09 期的 GB/T 48072、GB/T 47136 与 09-14 期的 GB 48146，已替换）。
+2. 国家标准并非每周发布；无新标准时使用最近发布项，但必须写真实发布/实施日期，不得为了凑 7 天窗口篡改日期；论文/厂商/开源/专利仍须在 7 天内。
+3. 替换完成后重跑去重脚本，并把「完全重复 / 同项目 / 高相似」数量告知用户。
+
 生成完成后，必须逐项检查：
 
 - [ ] 同一部分内 10 条的 HTML 结构完全一致（标签数量、字段数量、样式属性）
 - [ ] 论文部分：顶刊=A2（绿），其他 SCI=B2（蓝），arXiv=C3（橙），评级一致
 - [ ] 评级双字符格式正确（A-F × 1-6），无旧版 T1-T4 残留（`re.findall(r">T[1-4]<", html)` 为空）
 - [ ] 每条论文标签行包含期刊来源名称（arXiv / Applied Energy / J. Power Sources 等）
-- [ ] 所有日期在 7 天以内
+- [ ] 所有日期在 7 天以内（标准项按真实发布/实施日期，并在「实施」字段注明）
 - [ ] 所有链接不以 toutiao.com / cj.sina.com.cn 开头
+- [ ] 所有条目容器与文字 div 均含 `text-align:left`，回读草稿后长英文标题无 justify 拉伸出的大空隙
+- [ ] 与前 3 期完全重复 = 0；同一仓库每期 ≤ 1 条 release；标准号 4 期内不重复
+- [ ] 重复推送使用 draft/update（同一 media_id），未产生重复草稿
 - [ ] 趋势展望在最前面，3~5 条，每条一两句话，无引导语
 - [ ] 信源分级说明模块位于趋势展望与"一、"之间，含 AJP-2.1 字样
 - [ ] 每条摘要/创新/目的等字段达到 50~100 字
@@ -318,8 +351,23 @@ headers = {'Content-Type': 'application/json'}  # 缺少 charset=utf-8
 5. 期刊标签数量 = 10，DOI ≥ 6，arXiv = 4
 6. 信源分级说明含 AJP-2.1 且位于"一、"之前
 7. 评级徽章计数与生成端一致，且无 T1-T4 残留
+8. 条目数量 = 50（5 条趋势不计入）
+9. 标题 div 仍含 `text-align:left`
+10. 本地 HTML 与回读内容去掉标签后逐字一致（微信会规范化属性，不可用 MD5 判断）
 
-### 7.6 完整推送脚本
+### 7.6 幂等推送（2026-10-22 新增，强制）
+
+禁止每次修改都调用 `draft/add`，否则草稿箱会堆出重复稿。
+
+```python
+DRAFT_FILE = os.path.join(BASE, "draft_id.txt")
+# 首次：draft/add -> 将 {"media_id": ..., "thumb_media_id": ...} 写入 draft_id.txt
+# 后续：draft/update，参数 {"media_id": 同一ID, "index": 0, "articles": {...}}
+```
+
+封面只上传一次，`thumb_media_id` 与 `media_id` 一起复用；重跑脚本时不再重复上传。
+
+### 7.7 完整推送脚本
 
 ```python
 # -*- coding: utf-8 -*-
@@ -433,6 +481,21 @@ if 'media_id' in result:
 | 有无意义的引导语 | 自动生成的概述 | 删除引导语，直接展示条目 |
 | 封面图格式不符 | 未参考历史文章 | 用 PIL 程序化渲染（160/111pt 层级），见 7.4 节 |
 
+### 8.7 排版对齐问题（2026-10-22）
+
+| 问题 | 原因 | 解决方案 |
+|------|------|----------|
+| 长英文标题「9 · System…」中间出现巨大空隙 | 微信 div 默认两端对齐，首行被拉伸 | 条目 section 与所有文字 div 显式加 `text-align:left` |
+| 中文段落看不出异常，英文标题才暴露 | 中文无空格可拉伸 | 回读草稿检查标题 div 的 text-align 是否保留 |
+
+### 8.8 跨期重复问题（2026-10-22）
+
+| 问题 | 原因 | 解决方案 |
+|------|------|----------|
+| 新一期重复上期标准（48072/47136/48146） | 国标并非每周发布，直接沿用旧条目 | 跑跨期去重脚本，标准号 4 期内不重复 |
+| 同一仓库一期出现 4 条 release | 只按项目搜索，未做期内去重 | 每期每仓库最多 1 条，其余换新项目 |
+| 重复推送产生多篇草稿 | 每次修改都调用 draft/add | 用 draft_id.txt + draft/update 原地更新 |
+
 ---
 
 ## 九、Python 模板函数
@@ -452,27 +515,27 @@ def h2(title):
     return f'<h2 style="font-size:19px;color:#111;margin:24px 0 12px 0;padding-bottom:8px;border-bottom:2px solid #4a90d9;font-weight:bold;text-align:left;">{title}</h2>'
 
 def trend_section(num, title, description):
-    return f'<section style="margin-bottom:12px;padding:12px 14px;background:#fff;border-left:3px solid #4a90d9;border-radius:4px;word-break:break-all;"><div style="font-size:14px;color:#111;font-weight:bold;margin-bottom:6px;line-height:1.5;">{num} \u00b7 {title}</div><div style="font-size:13px;color:#333;margin-bottom:6px;line-height:1.7;">{description}</div></section>'
+    return f'<section style="margin-bottom:12px;padding:12px 14px;background:#fff;border-left:3px solid #4a90d9;border-radius:4px;word-break:break-all;text-align:left;"><div style="font-size:14px;color:#111;font-weight:bold;margin-bottom:6px;line-height:1.5;text-align:left;">{num} \u00b7 {title}</div><div style="font-size:13px;color:#333;margin-bottom:6px;line-height:1.7;text-align:left;">{description}</div></section>'
 
 def paper_section(num, title, abstract, innovation, source_url, journal, topic_tag, date, rating='B2'):
     # rating: A2 top-tier / B2 SCI / C3 arXiv
-    return f'<section style="margin-bottom:12px;padding:12px 14px;background:#fff;border-left:3px solid #4a90d9;border-radius:4px;word-break:break-all;"><div style="display:flex;align-items:center;flex-wrap:nowrap;gap:4px;margin-bottom:6px;overflow-x:auto;white-space:nowrap;"><span style="background:{rating_color(rating)};color:#fff;font-size:11px;padding:1px 6px;border-radius:3px;">{rating}</span><span style="background:#e8f5e9;color:#2e7d32;font-size:11px;padding:1px 6px;border-radius:3px;">\U0001f4c5{date}</span><span style="background:#d4edda;color:#155724;font-size:11px;padding:1px 6px;border-radius:3px;">{journal}</span><span style="background:#d4edda;color:#155724;font-size:11px;padding:1px 6px;border-radius:3px;">{topic_tag}</span></div><div style="font-size:14px;color:#111;font-weight:bold;margin-bottom:6px;line-height:1.5;">{num} \u00b7 {title}</div><div style="font-size:13px;color:#333;margin-bottom:6px;line-height:1.7;">\U0001f4cc <b>\u6458\u8981:</b>{abstract}</div><div style="font-size:13px;color:#333;margin-bottom:6px;line-height:1.7;">\U0001f4a1 <b>\u521b\u65b0:</b>{innovation}</div><div style="color:#888;font-size:12px;">\u6765\u6e90: <span style="color:#4a90d9;text-decoration:none;;word-break:break-all">{source_url}</span></div></section>'
+    return f'<section style="margin-bottom:12px;padding:12px 14px;background:#fff;border-left:3px solid #4a90d9;border-radius:4px;word-break:break-all;text-align:left;"><div style="display:flex;align-items:center;flex-wrap:nowrap;gap:4px;margin-bottom:6px;overflow-x:auto;white-space:nowrap;"><span style="background:{rating_color(rating)};color:#fff;font-size:11px;padding:1px 6px;border-radius:3px;">{rating}</span><span style="background:#e8f5e9;color:#2e7d32;font-size:11px;padding:1px 6px;border-radius:3px;">\U0001f4c5{date}</span><span style="background:#d4edda;color:#155724;font-size:11px;padding:1px 6px;border-radius:3px;">{journal}</span><span style="background:#d4edda;color:#155724;font-size:11px;padding:1px 6px;border-radius:3px;">{topic_tag}</span></div><div style="font-size:14px;color:#111;font-weight:bold;margin-bottom:6px;line-height:1.5;text-align:left;">{num} \u00b7 {title}</div><div style="font-size:13px;color:#333;margin-bottom:6px;line-height:1.7;text-align:left;">\U0001f4cc <b>\u6458\u8981:</b>{abstract}</div><div style="font-size:13px;color:#333;margin-bottom:6px;line-height:1.7;text-align:left;">\U0001f4a1 <b>\u521b\u65b0:</b>{innovation}</div><div style="color:#888;font-size:12px;text-align:left;">\u6765\u6e90: <span style="color:#4a90d9;text-decoration:none;;word-break:break-all">{source_url}</span></div></section>'
 
 def vendor_section(num, title, abstract, source_url, tags, date, rating='B2'):
     tag1, tag2 = tags
-    return f'<section style="margin-bottom:12px;padding:12px 14px;background:#fff;border-left:3px solid #27ae60;border-radius:4px;word-break:break-all;"><div style="display:flex;align-items:center;flex-wrap:nowrap;gap:4px;margin-bottom:6px;overflow-x:auto;white-space:nowrap;"><span style="background:{rating_color(rating)};color:#fff;font-size:11px;padding:1px 6px;border-radius:3px;">{rating}</span><span style="background:#e8f5e9;color:#2e7d32;font-size:11px;padding:1px 6px;border-radius:3px;">\U0001f4c5{date}</span><span style="background:#d4edda;color:#155724;font-size:11px;padding:1px 6px;border-radius:3px;">{tag1}</span><span style="background:#d4edda;color:#155724;font-size:11px;padding:1px 6px;border-radius:3px;">{tag2}</span></div><div style="font-size:14px;color:#111;font-weight:bold;margin-bottom:6px;line-height:1.5;">{num} \u00b7 {title}</div><div style="font-size:13px;color:#333;margin-bottom:6px;line-height:1.7;">\U0001f4cc <b>\u6458\u8981:</b>{abstract}</div><div style="color:#888;font-size:12px;">\u6765\u6e90: <span style="color:#4a90d9;text-decoration:none;;word-break:break-all">{source_url}</span></div></section>'
+    return f'<section style="margin-bottom:12px;padding:12px 14px;background:#fff;border-left:3px solid #27ae60;border-radius:4px;word-break:break-all;text-align:left;"><div style="display:flex;align-items:center;flex-wrap:nowrap;gap:4px;margin-bottom:6px;overflow-x:auto;white-space:nowrap;"><span style="background:{rating_color(rating)};color:#fff;font-size:11px;padding:1px 6px;border-radius:3px;">{rating}</span><span style="background:#e8f5e9;color:#2e7d32;font-size:11px;padding:1px 6px;border-radius:3px;">\U0001f4c5{date}</span><span style="background:#d4edda;color:#155724;font-size:11px;padding:1px 6px;border-radius:3px;">{tag1}</span><span style="background:#d4edda;color:#155724;font-size:11px;padding:1px 6px;border-radius:3px;">{tag2}</span></div><div style="font-size:14px;color:#111;font-weight:bold;margin-bottom:6px;line-height:1.5;text-align:left;">{num} \u00b7 {title}</div><div style="font-size:13px;color:#333;margin-bottom:6px;line-height:1.7;text-align:left;">\U0001f4cc <b>\u6458\u8981:</b>{abstract}</div><div style="color:#888;font-size:12px;text-align:left;">\u6765\u6e90: <span style="color:#4a90d9;text-decoration:none;;word-break:break-all">{source_url}</span></div></section>'
 
 def opensource_section(num, title, abstract, source_url, tags, date, rating='C2'):
     tag1, tag2 = tags
-    return f'<section style="margin-bottom:12px;padding:12px 14px;background:#fff;border-left:3px solid #4a90d9;border-radius:4px;word-break:break-all;"><div style="display:flex;align-items:center;flex-wrap:nowrap;gap:4px;margin-bottom:6px;overflow-x:auto;white-space:nowrap;"><span style="background:{rating_color(rating)};color:#fff;font-size:11px;padding:1px 6px;border-radius:3px;">{rating}</span><span style="background:#e8f5e9;color:#2e7d32;font-size:11px;padding:1px 6px;border-radius:3px;">\U0001f4c5{date}</span><span style="background:#d4edda;color:#155724;font-size:11px;padding:1px 6px;border-radius:3px;">{tag1}</span><span style="background:#d4edda;color:#155724;font-size:11px;padding:1px 6px;border-radius:3px;">{tag2}</span></div><div style="font-size:14px;color:#111;font-weight:bold;margin-bottom:6px;line-height:1.5;">{num} \u00b7 {title}</div><div style="font-size:13px;color:#333;margin-bottom:6px;line-height:1.7;">\U0001f4cc <b>\u6458\u8981:</b>{abstract}</div><div style="color:#888;font-size:12px;">\u6765\u6e90: <span style="color:#4a90d9;text-decoration:none;;word-break:break-all">{source_url}</span></div></section>'
+    return f'<section style="margin-bottom:12px;padding:12px 14px;background:#fff;border-left:3px solid #4a90d9;border-radius:4px;word-break:break-all;text-align:left;"><div style="display:flex;align-items:center;flex-wrap:nowrap;gap:4px;margin-bottom:6px;overflow-x:auto;white-space:nowrap;"><span style="background:{rating_color(rating)};color:#fff;font-size:11px;padding:1px 6px;border-radius:3px;">{rating}</span><span style="background:#e8f5e9;color:#2e7d32;font-size:11px;padding:1px 6px;border-radius:3px;">\U0001f4c5{date}</span><span style="background:#d4edda;color:#155724;font-size:11px;padding:1px 6px;border-radius:3px;">{tag1}</span><span style="background:#d4edda;color:#155724;font-size:11px;padding:1px 6px;border-radius:3px;">{tag2}</span></div><div style="font-size:14px;color:#111;font-weight:bold;margin-bottom:6px;line-height:1.5;text-align:left;">{num} \u00b7 {title}</div><div style="font-size:13px;color:#333;margin-bottom:6px;line-height:1.7;text-align:left;">\U0001f4cc <b>\u6458\u8981:</b>{abstract}</div><div style="color:#888;font-size:12px;text-align:left;">\u6765\u6e90: <span style="color:#4a90d9;text-decoration:none;;word-break:break-all">{source_url}</span></div></section>'
 
 def patent_section(num, cn_id, title, applicant, abstract, innovation, tags, date, rating='C2'):
     tag1, tag2 = tags
-    return f'<section style="margin-bottom:12px;padding:12px 14px;background:#fff;border-left:3px solid #e67e22;border-radius:4px;word-break:break-all;"><div style="display:flex;align-items:center;flex-wrap:nowrap;gap:4px;margin-bottom:6px;overflow-x:auto;white-space:nowrap;"><span style="background:{rating_color(rating)};color:#fff;font-size:11px;padding:1px 6px;border-radius:3px;">{rating}</span><span style="background:#e8f5e9;color:#2e7d32;font-size:11px;padding:1px 6px;border-radius:3px;">\U0001f4c5{date}</span><span style="background:#d4edda;color:#155724;font-size:11px;padding:1px 6px;border-radius:3px;">{tag1}</span><span style="background:#d4edda;color:#155724;font-size:11px;padding:1px 6px;border-radius:3px;">{tag2}</span></div><div style="font-size:14px;color:#111;font-weight:bold;margin-bottom:6px;line-height:1.5;">{num} \u00b7 {cn_id} {title}</div><div style="font-size:13px;color:#333;margin-bottom:6px;line-height:1.7;">\U0001f4cc <b>\u7533\u8bf7\u4eba:</b>{applicant}</div><div style="font-size:13px;color:#333;margin-bottom:6px;line-height:1.7;">\U0001f4cc <b>\u6458\u8981:</b>{abstract}</div><div style="font-size:13px;color:#333;margin-bottom:6px;line-height:1.7;">\U0001f4a1 <b>\u521b\u65b0:</b>{innovation}</div><div style="color:#888;font-size:12px;">\u6765\u6e90: <span style="color:#4a90d9;text-decoration:none;;word-break:break-all">https://patents.google.com/patent/{cn_id}/zh</span></div></section>'
+    return f'<section style="margin-bottom:12px;padding:12px 14px;background:#fff;border-left:3px solid #e67e22;border-radius:4px;word-break:break-all;text-align:left;"><div style="display:flex;align-items:center;flex-wrap:nowrap;gap:4px;margin-bottom:6px;overflow-x:auto;white-space:nowrap;"><span style="background:{rating_color(rating)};color:#fff;font-size:11px;padding:1px 6px;border-radius:3px;">{rating}</span><span style="background:#e8f5e9;color:#2e7d32;font-size:11px;padding:1px 6px;border-radius:3px;">\U0001f4c5{date}</span><span style="background:#d4edda;color:#155724;font-size:11px;padding:1px 6px;border-radius:3px;">{tag1}</span><span style="background:#d4edda;color:#155724;font-size:11px;padding:1px 6px;border-radius:3px;">{tag2}</span></div><div style="font-size:14px;color:#111;font-weight:bold;margin-bottom:6px;line-height:1.5;text-align:left;">{num} \u00b7 {cn_id} {title}</div><div style="font-size:13px;color:#333;margin-bottom:6px;line-height:1.7;text-align:left;">\U0001f4cc <b>\u7533\u8bf7\u4eba:</b>{applicant}</div><div style="font-size:13px;color:#333;margin-bottom:6px;line-height:1.7;text-align:left;">\U0001f4cc <b>\u6458\u8981:</b>{abstract}</div><div style="font-size:13px;color:#333;margin-bottom:6px;line-height:1.7;text-align:left;">\U0001f4a1 <b>\u521b\u65b0:</b>{innovation}</div><div style="color:#888;font-size:12px;text-align:left;">\u6765\u6e90: <span style="color:#4a90d9;text-decoration:none;;word-break:break-all">https://patents.google.com/patent/{cn_id}/zh</span></div></section>'
 
 def standard_section(num, std_id, title, purpose, core_content, implementation, tags, date, source_url, rating='A2'):
     tag1, tag2 = tags
-    return f'<section style="margin-bottom:12px;padding:12px 14px;background:#fff;border-left:3px solid #e67e22;border-radius:4px;word-break:break-all;"><div style="display:flex;align-items:center;flex-wrap:nowrap;gap:4px;margin-bottom:6px;overflow-x:auto;white-space:nowrap;"><span style="background:{rating_color(rating)};color:#fff;font-size:11px;padding:1px 6px;border-radius:3px;">{rating}</span><span style="background:#e8f5e9;color:#2e7d32;font-size:11px;padding:1px 6px;border-radius:3px;">\U0001f4c5{date}</span><span style="background:#d4edda;color:#155724;font-size:11px;padding:1px 6px;border-radius:3px;">{tag1}</span><span style="background:#d4edda;color:#155724;font-size:11px;padding:1px 6px;border-radius:3px;">{tag2}</span></div><div style="font-size:14px;color:#111;font-weight:bold;margin-bottom:6px;line-height:1.5;">{num} \u00b7 {std_id} {title}</div><div style="font-size:13px;color:#333;margin-bottom:6px;line-height:1.7;">\U0001f3af <b>\u76ee\u7684:</b>{purpose}</div><div style="font-size:13px;color:#333;margin-bottom:6px;line-height:1.7;">\U0001f4cb <b>\u6838\u5fc3\u5185\u5bb9:</b>{core_content}</div><div style="font-size:13px;color:#333;margin-bottom:6px;line-height:1.7;">\U0001f4c5 <b>\u5b9e\u65bd:</b>{implementation}</div><div style="color:#888;font-size:12px;">\u6765\u6e90: <span style="color:#4a90d9;text-decoration:none;;word-break:break-all">{source_url}</span></div></section>'
+    return f'<section style="margin-bottom:12px;padding:12px 14px;background:#fff;border-left:3px solid #e67e22;border-radius:4px;word-break:break-all;text-align:left;"><div style="display:flex;align-items:center;flex-wrap:nowrap;gap:4px;margin-bottom:6px;overflow-x:auto;white-space:nowrap;"><span style="background:{rating_color(rating)};color:#fff;font-size:11px;padding:1px 6px;border-radius:3px;">{rating}</span><span style="background:#e8f5e9;color:#2e7d32;font-size:11px;padding:1px 6px;border-radius:3px;">\U0001f4c5{date}</span><span style="background:#d4edda;color:#155724;font-size:11px;padding:1px 6px;border-radius:3px;">{tag1}</span><span style="background:#d4edda;color:#155724;font-size:11px;padding:1px 6px;border-radius:3px;">{tag2}</span></div><div style="font-size:14px;color:#111;font-weight:bold;margin-bottom:6px;line-height:1.5;text-align:left;">{num} \u00b7 {std_id} {title}</div><div style="font-size:13px;color:#333;margin-bottom:6px;line-height:1.7;text-align:left;">\U0001f3af <b>\u76ee\u7684:</b>{purpose}</div><div style="font-size:13px;color:#333;margin-bottom:6px;line-height:1.7;text-align:left;">\U0001f4cb <b>\u6838\u5fc3\u5185\u5bb9:</b>{core_content}</div><div style="font-size:13px;color:#333;margin-bottom:6px;line-height:1.7;text-align:left;">\U0001f4c5 <b>\u5b9e\u65bd:</b>{implementation}</div><div style="color:#888;font-size:12px;text-align:left;">\u6765\u6e90: <span style="color:#4a90d9;text-decoration:none;;word-break:break-all">{source_url}</span></div></section>'
 
 def footer():
     return '<section style="background:#f5f5f5;border-radius:8px;padding:16px;margin-top:24px;text-align:center;"><div style="font-size:12px;color:#888;line-height:1.8;margin-bottom:8px;">\u4e8b\u5b9e\u6838\u67e5\u58f0\u660e\uff1a\u672c\u671f\u5185\u5bb9\u6765\u6e90\u5df2\u6309 Admiralty / NATO AJP-2.1 \u6807\u51c6\u53cc\u7ef4\u8bc4\u7ea7\u6807\u6ce8\uff0cD/E \u7ea7\u4fe1\u6e90\u6761\u76ee\u4ec5\u4f9b\u53c2\u8003\uff0c\u4e0d\u6784\u6210\u6295\u8d44\u5efa\u8bae\u3002</div><div style="font-size:14px;color:#4a90d9;font-weight:bold;">\U0001f50b BMS \u7b97\u6cd5\u8ffd\u8e2a</div><div style="font-size:11px;color:#aaa;margin-top:4px;">\u5173\u6ce8\u7535\u6c60\u7ba1\u7406\u7cfb\u7edf\u524d\u6cbf | \u6bcf\u5468\u66f4\u65b0</div></section>'
