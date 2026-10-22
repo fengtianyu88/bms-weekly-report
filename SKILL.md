@@ -116,6 +116,21 @@ When selecting the 6 journal papers, prioritize journals from this list (2024 JC
 
 ### All styles must be inline (WeChat strips `<style>` and `<a>` tags)
 
+### Text Alignment (CRITICAL — added 2026-10-22)
+
+Every entry `<section>` and every text `<div>` inside it MUST carry an explicit `text-align:left;`. Do not rely on inheritance.
+
+Reason: WeChat renders divs with **justify** by default. Chinese-only paragraphs hide the problem, but a long English paper title (e.g. `9 · System Identification for Nonlinear Stochastic State-Space Models …`) has its first line stretched to full width, producing a visibly huge gap between `9 ·` and `System`. Users notice this immediately.
+
+Apply to:
+- entry `<section>` container
+- title div (`N · Title`)
+- 摘要 / 创新 / 申请人 / 目的 / 核心内容 / 实施 divs
+- source line div (`来源:`)
+- trends block
+
+Verification after push: read back the draft and confirm `text-align:left` is still present in the title div (WeChat preserves it), and that no title div has inherited justify.
+
 ### H2 Title Style
 ```html
 <h2 style="font-size:19px;color:#111;margin:24px 0 12px 0;padding-bottom:8px;border-bottom:2px solid #4a90d9;font-weight:bold;text-align:left;">Section Title</h2>
@@ -134,7 +149,7 @@ When selecting the 6 journal papers, prioritize journals from this list (2024 JC
 
 ### Paper Entry Template (arXiv / C3)
 ```html
-<section style="margin-bottom:12px;padding:12px 14px;background:#fff;border-left:3px solid #4a90d9;border-radius:4px;word-break:break-all;"><div style="display:flex;align-items:center;flex-wrap:nowrap;gap:4px;margin-bottom:6px;overflow-x:auto;white-space:nowrap;"><span style="background:#e67e22;color:#fff;font-size:11px;padding:1px 6px;border-radius:3px;">C3</span><span style="background:#e8f5e9;color:#2e7d32;font-size:11px;padding:1px 6px;border-radius:3px;">📅YYYY-MM-DD</span><span style="background:#d4edda;color:#155724;font-size:11px;padding:1px 6px;border-radius:3px;">arXiv</span><span style="background:#d4edda;color:#155724;font-size:11px;padding:1px 6px;border-radius:3px;">TopicTag</span></div><div style="font-size:14px;color:#111;font-weight:bold;margin-bottom:6px;line-height:1.5;">N · Paper Title</div><div style="font-size:13px;color:#333;margin-bottom:6px;line-height:1.7;">📌 <b>摘要:</b>50-100 char abstract</div><div style="font-size:13px;color:#333;margin-bottom:6px;line-height:1.7;">💡 <b>创新:</b>50-100 char innovation</div><div style="color:#888;font-size:12px;">来源: <span style="color:#4a90d9;text-decoration:none;;word-break:break-all">https://arxiv.org/abs/XXXX.XXXXX</span></div></section>
+<section style="margin-bottom:12px;padding:12px 14px;background:#fff;border-left:3px solid #4a90d9;border-radius:4px;word-break:break-all;text-align:left;"><div style="display:flex;align-items:center;flex-wrap:nowrap;gap:4px;margin-bottom:6px;overflow-x:auto;white-space:nowrap;"><span style="background:#e67e22;color:#fff;font-size:11px;padding:1px 6px;border-radius:3px;">C3</span><span style="background:#e8f5e9;color:#2e7d32;font-size:11px;padding:1px 6px;border-radius:3px;">📅YYYY-MM-DD</span><span style="background:#d4edda;color:#155724;font-size:11px;padding:1px 6px;border-radius:3px;">arXiv</span><span style="background:#d4edda;color:#155724;font-size:11px;padding:1px 6px;border-radius:3px;">TopicTag</span></div><div style="font-size:14px;color:#111;font-weight:bold;margin-bottom:6px;line-height:1.5;text-align:left;">N · Paper Title</div><div style="font-size:13px;color:#333;margin-bottom:6px;line-height:1.7;text-align:left;">📌 <b>摘要:</b>50-100 char abstract</div><div style="font-size:13px;color:#333;margin-bottom:6px;line-height:1.7;text-align:left;">💡 <b>创新:</b>50-100 char innovation</div><div style="color:#888;font-size:12px;text-align:left;">来源: <span style="color:#4a90d9;text-decoration:none;;word-break:break-all">https://arxiv.org/abs/XXXX.XXXXX</span></div></section>
 ```
 
 ### Paper Entry Template (SCI Journal / A2 or B2)
@@ -146,7 +161,7 @@ Same structure but:
 
 ### Vendor News Entry Template
 ```html
-<section style="margin-bottom:12px;padding:12px 14px;background:#fff;border-left:3px solid #27ae60;border-radius:4px;word-break:break-all;"><div style="display:flex;align-items:center;flex-wrap:nowrap;gap:4px;margin-bottom:6px;overflow-x:auto;white-space:nowrap;"><span style="background:#4a90d9;color:#fff;font-size:11px;padding:1px 6px;border-radius:3px;">B2</span><span style="background:#e8f5e9;color:#2e7d32;font-size:11px;padding:1px 6px;border-radius:3px;">📅YYYY-MM-DD</span><span style="background:#d4edda;color:#155724;font-size:11px;padding:1px 6px;border-radius:3px;">Tag1</span><span style="background:#d4edda;color:#155724;font-size:11px;padding:1px 6px;border-radius:3px;">Tag2</span></div><div style="font-size:14px;color:#111;font-weight:bold;margin-bottom:6px;line-height:1.5;">N · Title</div><div style="font-size:13px;color:#333;margin-bottom:6px;line-height:1.7;">📌 <b>摘要:</b>50-100 char abstract</div><div style="color:#888;font-size:12px;">来源: <span style="color:#4a90d9;text-decoration:none;;word-break:break-all">URL</span></div></section>
+<section style="margin-bottom:12px;padding:12px 14px;background:#fff;border-left:3px solid #27ae60;border-radius:4px;word-break:break-all;text-align:left;"><div style="display:flex;align-items:center;flex-wrap:nowrap;gap:4px;margin-bottom:6px;overflow-x:auto;white-space:nowrap;"><span style="background:#4a90d9;color:#fff;font-size:11px;padding:1px 6px;border-radius:3px;">B2</span><span style="background:#e8f5e9;color:#2e7d32;font-size:11px;padding:1px 6px;border-radius:3px;">📅YYYY-MM-DD</span><span style="background:#d4edda;color:#155724;font-size:11px;padding:1px 6px;border-radius:3px;">Tag1</span><span style="background:#d4edda;color:#155724;font-size:11px;padding:1px 6px;border-radius:3px;">Tag2</span></div><div style="font-size:14px;color:#111;font-weight:bold;margin-bottom:6px;line-height:1.5;text-align:left;">N · Title</div><div style="font-size:13px;color:#333;margin-bottom:6px;line-height:1.7;text-align:left;">📌 <b>摘要:</b>50-100 char abstract</div><div style="color:#888;font-size:12px;text-align:left;">来源: <span style="color:#4a90d9;text-decoration:none;;word-break:break-all">URL</span></div></section>
 ```
 
 ### Patent Entry Template (border-left: #e67e22)
@@ -171,6 +186,109 @@ Includes: 目的, 核心内容, 实施 (each 50-100 chars)
 | Patent abstract/innovation | 50-100 chars each |
 | Standard purpose/core content | 50-100 chars each |
 
+## Cross-Issue Deduplication (MANDATORY — added 2026-10-22)
+
+A weekly report that repeats last week's items loses credibility. Before pushing, compare the draft against the previous **three** issues (`bms_weekly_*/bms_weekly_YYYY-MM-DD.html`, `bms-weekly-*/…`).
+
+### Identity keys
+
+Extract every entry's identity and match across issues:
+
+| Section | Identity key |
+|---------|--------------|
+| Papers | DOI (`doi.org/…`) or arXiv ID (`arxiv.org/abs/…`, strip version suffix) |
+| Vendors | Article URL |
+| Open source | GitHub release tag URL (`.../releases/tag/<tag>`); repo homepage alone is NOT an identity |
+| Patents | Patent number (CN…) or source article URL |
+| Standards | `hcno` from `openstd.samr.gov.cn/...?hcno=…` or standard number (GB/T 48072-2026) |
+
+`check_duplicates.py` pattern: parse each `<section style="margin-bottom:12px;padding:12px 14px…">`, extract the `N · Title` line and all URLs, then classify:
+- **exact duplicate** — shared identity key
+- **same project, new version** — same GitHub repo path, different release tag
+- **high title similarity** — normalized title `difflib.SequenceMatcher ≥ 0.80`
+
+### Rules
+
+1. **Exact duplicates must be replaced** — 0 tolerated in papers / vendors / open source / patents, and **0 in standards**.
+2. **Same-project releases**: at most **1 entry per repo per issue** (2 only if there is a major-version change). A 2026-10-22 draft initially carried 4 Predbat releases in one issue — unacceptable; keep the latest and fill the other slots with projects not covered recently.
+3. **Standards rotation**: a standard must not reappear within **4 issues**. Check the standard number against the previous 3 issues before including it.
+4. **Standards do not publish weekly**: the national standards platform may have no new battery standard for several weeks. In that case use the most recently published/announced items, keep their **true publication and implementation dates**, and state the actual dates in the `实施` field. Never fabricate a date inside the 7-day window. Papers / vendors / open source / patents must still be within 7 days.
+5. After replacement, re-run the duplicate check and re-push; report the counts (exact duplicates / same-project / similar titles) to the user.
+
+## Weekly Data Collection Recipes (verified 2026-10-22)
+
+Use scripts in the week's folder; do not hand-type records from memory.
+
+```text
+bms_weekly_MMDD/
+  collect_crossref.py     # journal papers
+  collect_arxiv.py        # preprints
+  collect_sina.py         # vendor news via Sina search API
+  collect_github.py       # GitHub releases
+  collect_std.py          # national standards list
+  build_report.py         # content lists + HTML assembly
+  make_cover.py           # PIL cover
+  push_wechat.py          # idempotent draft push
+  check_duplicates.py     # cross-issue dedup
+  verify_links.py         # link/DOI validation
+```
+
+### Papers — Crossref
+
+```python
+url = (f"https://api.crossref.org/journals/{issn}/works"
+       f"?filter=type:journal-article&rows=200"
+       f"&select=DOI,title,created,abstract&sort=created&order=desc")
+# keep created date in [START, END] and title matches BMS keywords
+```
+
+Journals/ISSN: Applied Energy `0306-2619`, J. Power Sources `0378-7753`, J. Energy Storage `2352-152X`, Energy Conversion and Management `0196-8904`, Battery Energy `2768-1688`, Energy Storage Materials `2405-8297`, ACS Energy Letters `2380-8195`, Electrochimica Acta `0013-4686`, IEEE TIE `0278-0046`, IEEE TPEL `0885-8993`, eTransportation `2590-1168`. Elsevier often omits abstracts — write Chinese summaries from the verified title, without inventing numbers.
+
+### Papers — arXiv
+
+```python
+params = {"search_query": 'abs:"battery management"', "start": 0, "max_results": 60,
+          "sortBy": "submittedDate", "sortOrder": "descending"}
+# endpoint: http://export.arxiv.org/api/query
+```
+
+Filter `<published>` to the 7-day window; dedupe by arXiv ID.
+
+### Vendor news — Sina search API
+
+```python
+u = f"https://search.sina.com.cn/api/news?q={quote(q)}&page=1&size=50"
+# fields: dataTime, title, intro, url
+```
+
+Query company + battery keywords (宁德时代/比亚迪/亿纬锂能/国轩高科/储能/固态电池/换电…), keep `2026-10-15…10-22`. Candidate URLs come from `finance.sina.com.cn` / `k.sina.com.cn`; **never** `toutiao.com`. Fetch the article text before writing the 50-100 char summary.
+
+### Patent news — Sina AIGC patent channel
+
+Search `site`-style queries such as `10月21日消息 国家知识产权局 电池 专利`, then fetch:
+`https://finance.sina.com.cn/stock/aigc/zl/YYYY-MM-DD/doc-xxxx.shtml.md` (the `.md` suffix returns clean markdown).
+`patents.google.com` is unreachable from scripts; CNIPA epub returns a JS challenge. Rely on Sina patent reports / 启信宝 detail pages, and cite the actual article.
+
+### Standards — openstd
+
+```python
+GET https://openstd.samr.gov.cn/bzgk/std/std_list
+    ?p.p1=0&p.p90=circulation_date&p.p91=desc&p.p2=电池
+# hcno: re.findall(r"showInfo\('([0-9A-F]{32})'\)", html)
+# detail: https://openstd.samr.gov.cn/bzgk/std/newGbInfo?hcno=...
+```
+
+Also check `ces.org.cn` for T/CES group standards and `std.samr.gov.cn` for TC550 power-storage standards.
+
+### Open source — GitHub
+
+```python
+GET https://api.github.com/repos/{owner}/{repo}/releases?per_page=15
+GET https://api.github.com/search/repositories?q=topic:battery-management+pushed:>YYYY-MM-DD
+```
+
+Use `published_at` for the date. If a repo has no tagged release in the window, do not use it; never point to `/releases` when it does not exist.
+
 ## WeChat Push Specification
 
 ### Parameters
@@ -184,6 +302,18 @@ Includes: 目的, 核心内容, 实施 (each 50-100 chars)
 1. Get access_token: `GET https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid={APPID}&secret={APPSECRET}`
 2. Upload cover image: `POST https://api.weixin.qq.com/cgi-bin/material/add_material?access_token={token}&type=image`
 3. Push draft: `POST https://api.weixin.qq.com/cgi-bin/draft/add?access_token={token}`
+
+### Idempotent Push (MANDATORY — added 2026-10-22)
+
+Never call `draft/add` on every revision — it leaves duplicate drafts in the account.
+
+```python
+DRAFT_FILE = os.path.join(BASE, "draft_id.txt")
+# first push:  draft/add  -> save {"media_id": ..., "thumb_media_id": ...}
+# later edits: draft/update with the SAME media_id (index 0) -> original draft updated in place
+```
+
+`draft/update` payload: `{"media_id": ..., "index": 0, "articles": {...}}`. Keep the uploaded cover's `thumb_media_id` in the same JSON so re-runs do not re-upload the image.
 
 ### CRITICAL: Encoding Requirements
 
@@ -209,7 +339,10 @@ result = json.loads(r.content.decode('utf-8'))
 
 ### Post-Push Verification
 1. Read back draft via `POST /cgi-bin/draft/get`
-2. Verify: title contains date, Chinese chars > 5000, H2 count = 6, URL count > 50, journal badge count = 10, DOI count >= 6, arXiv count = 4, legend mentions "AJP-2.1" and appears before Section 一, dual-char rating badges (A2/B2/C2/C3/D3) counts match the generated report, and zero legacy `T[1-4]` badges remain (`re.findall(r">T[1-4]<", c)` must be empty)
+2. Verify: title contains date, Chinese chars > 5000, H2 count = 6, entry count = 50, URL count > 50, journal badge count = 10, DOI count >= 6, arXiv count = 4, legend mentions "AJP-2.1" and appears before Section 一, dual-char rating badges (A2/B2/C2/C3/D3) counts match the generated report, and zero legacy `T[1-4]` badges remain (`re.findall(r">T[1-4]<", c)` must be empty)
+3. Verify alignment: the title div read back still contains `text-align:left` — if the style was stripped, the English titles will justify-stretch again
+4. Verify text integrity: strip tags from both local HTML and readback, then compare character by character (WeChat normalizes some attributes, so MD5 equality is NOT a valid check; visible text equality is)
+5. Verify no cross-issue duplicates (see Cross-Issue Deduplication) — exact duplicate count must be 0
 
 ## Common Pitfalls and Solutions
 
@@ -239,6 +372,11 @@ result = json.loads(r.content.decode('utf-8'))
 24. **中电联 standard.cec.org.cn rating trap**: The site is operated by CEC (中国电力企业联合会), an industry ASSOCIATION commissioned by government — not a government agency. Two file types live there: DL power-industry standards & GB consultation notices = **B2** (commissioned body publishing, first-hand text); T/CEC group standards = **C2**. Only after NEA/国标委 publishes the final text on a government platform does the item qualify for A2.
 25. **cj.sina.com.cn is self-media**: Sina 看点 articles under user-ID URLs (e.g. `cj.sina.com.cn/articles/view/2868676035/...`) are user-generated content, NOT 新浪财经 editorial. Do not rate them B. Either replace with a finance.sina.com.cn official report (search for the same event) or downgrade to D3.
 26. **Aggregator links are not source links**: Never use 企查查/爱企查 **search-page URLs** (`aiqicha.baidu.com/s?q=...`) or `qcc.com` search links as entry sources — they are unstable and unverifiable. For patents, always use `patents.google.com/patent/{PUBLICATION_NUMBER}/zh` (C2, first-hand text); 企查查 detail-page relays of patent grants rate **C3** (relay, not first-hand).
+27. **Justify alignment makes long English titles look broken (CRITICAL — observed 2026-10-22)**: WeChat divs default to `text-align: justify`. Chinese paragraphs hide it; a long English paper title such as `9 · System Identification for Nonlinear Stochastic State-Space Models …` gets its first line stretched, leaving a huge gap after `9 ·`. Fix: put `text-align:left;` on the entry `<section>` **and** every text div (title / abstract / innovation / applicant / purpose / core / implementation / source / trends). After push, read back and confirm the attribute survived.
+28. **Repeating last week's standards**: National standards do not publish weekly, so it is tempting to reuse `GB/T 48072` / `GB/T 47136` / `GB 48146`. A 2026-10-22 draft carried three standards already published in 10-09 and 09-14. Run the cross-issue dedup before pushing and rotate standards — no standard number may repeat within 4 issues.
+29. **GitHub link verification may time out transiently**: `github.com` occasionally refuses/times out for 2-3 minutes. Do not mark links broken on the first timeout. Verify existence via `api.github.com/repos/{owner}/{repo}/releases` and retry the HTML check later.
+30. **企查查/启信宝 detail pages return 403 to scripts**: `qixin.com` / `qcc.com` block `requests` (403) but open normally in a browser. Treat 403 as "valid but not script-verifiable" (same as miit.gov.cn), not as a broken link.
+31. **Too many releases from one repo**: Four Predbat entries in one issue (2026-10-22) crowded out fresh projects. Cap at 1 per repo per issue; use GitHub repository search (`topic:battery-management pushed:>DATE`) to find previously unused projects with releases in the window.
 
 ## Complete Color Reference
 
@@ -272,13 +410,20 @@ After generating content, verify:
 - [ ] Open source: 10 items, all GitHub links, border `#4a90d9`
 - [ ] Patents: 10 items, each has 申请人/摘要/创新 (50-100 chars), border `#e67e22`
 - [ ] Standards: 10 items, each has 目的/核心内容/实施 (50-100 chars), border `#e67e22`
-- [ ] All dates within 7 days, format `📅YYYY-MM-DD`
+- [ ] All dates within 7 days, format `📅YYYY-MM-DD` (standards: use true publication/implementation dates and note the exception)
 - [ ] All links use `<span>` not `<a>`
 - [ ] All styles are inline
+- [ ] **All entry sections and text divs carry `text-align:left`** (verify the title div after readback — no justify-stretch gap in long English titles)
 - [ ] Footer section present
 - [ ] Title format: `BMS 算法追踪 YYYY-MM-DD`
 - [ ] Cover image: deep blue, two lines of text
 - [ ] Push encoding: `ensure_ascii=False` + `charset=utf-8`
-- [ ] Post-push verification passed
+- [ ] **Idempotent push**: re-runs use `draft/update` with the saved `media_id`; no duplicate drafts
+- [ ] **Cross-issue dedup**: 0 exact duplicates vs. the previous 3 issues; ≤1 release per GitHub repo; no standard repeated within 4 issues
+- [ ] Post-push verification passed (incl. entry count = 50 and visible-text equality)
 - [ ] **Unicode corruption scan**: Render all strings, check for rare CJK chars (frequency=1), verify no `\uXXXX` followed by hex digit in source
 - [ ] **Link validation**: Run `requests.head()` on all URLs; fix any 404/timeout; verify DOIs via Crossref; verify GitHub repos exist; verify patent numbers via CNIPA
+
+## Maintenance Log
+
+- **2026-10-22** — Added mandatory `text-align:left` (fixes justify-stretch gap in long English titles); added Cross-Issue Deduplication section + rules (0 exact duplicates, ≤1 release per repo, standards rotation within 4 issues); added Idempotent Push (`draft/update`); added Weekly Data Collection Recipes with verified endpoints; added readback checks for entry count / alignment / visible-text equality; pitfalls 27–31.
